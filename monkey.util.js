@@ -1,5 +1,5 @@
 // 显示一个Toast，提示消息
-export const toast = (content,time) => {
+const toast = (content,time) => {
   	return new Promise((resolve,reject) => {
         let elAlertMsg = document.querySelector("#fehelper_alertmsg");
         if (!elAlertMsg) {
@@ -22,4 +22,4 @@ export const toast = (content,time) => {
 };
 
 // 简单的sleep实现
-export const sleep = ms => new Promise((resolve,reject) => setTimeout(resolve,ms));
+const sleep = ms => new Promise((resolve,reject) => setTimeout(resolve,ms));
